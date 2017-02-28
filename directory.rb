@@ -48,7 +48,7 @@ end
 
 def save_students
   #open the file for writing
-  file = File.open(".gitignore", "w")
+  file = File.open("students.csv", "w")
   @students.each do |student|
     student_data = [student[:name], student[:cohort]]
     csv_line = student_data.join(",")
